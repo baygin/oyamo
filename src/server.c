@@ -448,3 +448,8 @@ void oyamo_server_set_router(oyamo_router_T *router)
 
     oyamo_server_config->router = router;
 }
+
+unsigned int oyamo_server_get_alive_count() 
+{
+    return oyamo_server_alive_client;
+}   

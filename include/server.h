@@ -64,5 +64,6 @@ static void oyamo_server_event_run_onmessage(oyamo_server_client_T *client, oyam
 static void oyamo_server_event_run_ondisconnect(oyamo_server_client_T *client);
 static void oyamo_server_ping_all_client();
 void oyamo_server_set_client_attr(oyamo_server_client_T *client, void *attr, size_t size);
+unsigned int oyamo_server_get_alive_count();
 
 #endif // !OYAMO_SERVER_H
