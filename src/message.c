@@ -52,13 +52,18 @@ const char *oyamo_message_serialize(oyamo_message_T *message)
         json_object_object_add(route, "operation", json_object_new_string(message->operation));
     }
 
+    if (message->parameters != NULL)
+    {
+        parameters = json_object_get(message->parameters);
+    }
+
     char route_status[2];
     sprintf(route_status, "%d", message->route_status);
 
     json_object_object_add(route, "status", json_object_new_string(route_status));
 
     json_object_object_add(root, "route", route);
-    json_object_object_add(root, "parameters", message->parameters);
+    json_object_object_add(root, "parameters", parameters);
 
     return json_object_to_json_string(root);
 }
