@@ -453,3 +453,8 @@ unsigned int oyamo_server_get_alive_count()
 {
     return oyamo_server_alive_client;
 }   
+
+oyamo_server_client_T** oyamo_server_get_all_clients()
+{
+    return oyamo_server_clients;
+}
