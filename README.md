@@ -1,6 +1,6 @@
 # OYAMO - A Lightweight TCP/IP Library for C
 
-OYAMO is a lightweight library for developing server-client applications using TCP/IP in C. It provides a simple and API for creating and managing connections, sending and receiving data, and handling events.
+OYAMO is a lightweight library for developing server-client applications using TCP/IP in C. It provides a simple API for creating and managing connections, sending and receiving data, and handling events.
 
 # Prerequisites
 
