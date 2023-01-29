@@ -53,7 +53,12 @@ int main()
     oyamo_server_event_set_onconnect(on_connect);
 
     // Start the OYAMO server
-    return oyamo_server_go();
+    oyamo_server_go();
+    
+    // Shutdown the OYAMO server
+    oyamo_server_shutdown();
+    
+    return 1;
 }
 ```
 
